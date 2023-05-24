@@ -1,0 +1,34 @@
+.app {
+  background-image: url('/fortuna-1/fondo1.jpg');
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr  1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.app>h1 {
+  display: flex;
+  align-self:last baseline;
+  justify-self: center;
+  margin-bottom: 70px;
+  font-size: 60px;
+  text-shadow: 6px 2px #000000;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  align-self:last baseline;
+  justify-self: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+  background-color: rgba(231, 248, 248, 0.527);
+  width: 120px;
+  border-radius: 20px;
+  padding: 10px;
+}
