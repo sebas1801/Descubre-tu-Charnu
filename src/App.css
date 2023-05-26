@@ -1,22 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
+
 .app {
-  background-image: url('/fortuna-1/fondo1.jpg');
+  
+  background-image: linear-gradient( 50deg,#56D9D9, #176066, #151414);
   min-height: 100vh;
   background-size: cover;
   background-position: center;
   display: grid;
-  grid-template-rows: 1fr 1fr  1fr;
+  grid-template-rows:  150px 1fr 2fr ;
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-family: 'Signika Negative', 'sans-serif';
+  
 
 }
 
 .app>h1 {
   display: flex;
-  align-self:last baseline;
-  justify-self: center;
-  margin-bottom: 70px;
-  font-size: 60px;
+  align-self: center;
+  justify-self: end;
+  
+  font-size: 40px;
   text-shadow: 6px 2px #000000;
   color: white;
 }
@@ -31,4 +36,24 @@
   width: 120px;
   border-radius: 20px;
   padding: 10px;
+}
+
+.logo_img {
+  width: 80%;
+  margin: auto;
+}
+
+@media (min-width:430px) {
+  .app {
+    display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+
+  .app>h1 {
+    display: flex;
+    flex-flow: row wrap;
+  }
 }

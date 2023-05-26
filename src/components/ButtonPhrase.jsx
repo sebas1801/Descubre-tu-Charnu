@@ -7,8 +7,6 @@ const ButtonPhrase = ({setPhraseRandom, setPathRandom, arrBackground}) => {
     const handleRandomPhrase = () => {
         const newRandomPhrase = getRandomElementFromArray(phraseList)
         setPhraseRandom(newRandomPhrase)
-        const newPath = getRandomElementFromArray(arrBackground)
-        setPathRandom(newPath)
     }
   return (
     <button className='button' onClick={handleRandomPhrase}>

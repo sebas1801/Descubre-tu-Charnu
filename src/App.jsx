@@ -7,28 +7,27 @@ import phrasesList from './utils/phrases.json'
 import randomElementFromArray from './utils/randomElementFronArray'
 
 
-const arrBackground = [1, 2, 3, 4]
 
 function App() {
 
   const initialPhrase = randomElementFromArray(phrasesList)
-  const initialPath = randomElementFromArray(arrBackground)
+  
 
   const [phraseRandom, setPhraseRandom] = useState(initialPhrase)
-  const [pathRandom, setPathRandom] = useState(initialPath)
+  
 
-  const objStyle = {
-    backgroundImage: `url('/fortuna-1/fondo${pathRandom}.jpg')`
-  }
-
+  
   return (
-    <div style={objStyle} className='app'>
-      <h1>Galleta de la fortuna</h1>
+    <div  className='app'>
+      <article className='logo_img'>
+        <img src="/fortuna-1/Transparente.png" alt="" />
+      </article >
+      <h1>Descubre los sabores de Charnú</h1>
       <section className='box'>
         <ButtonPhrase 
       setPhraseRandom={setPhraseRandom}
-      setPathRandom={setPathRandom}
-      arrBackground={arrBackground}
+      
+    
       />
       <PhrasesCard phraseRandom={phraseRandom} />
       </section>
